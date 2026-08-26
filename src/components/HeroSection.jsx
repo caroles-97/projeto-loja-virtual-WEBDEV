@@ -1,6 +1,8 @@
 import hero from '../assets/hero.png'
+// imagem preciso importar quando está SRC. Caso estiver na public não precisa importar
 
 const HeroSection = ({titulo, subtitulo, textoBotao}) => {
+// criação do componente com 3 propriedades
 
     const nome = "Carol"
 
@@ -19,3 +21,4 @@ const HeroSection = ({titulo, subtitulo, textoBotao}) => {
 }
 
 export default HeroSection
+// exportar o HeroSection
