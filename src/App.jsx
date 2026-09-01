@@ -10,7 +10,7 @@ import Products from './components/Products'
 const App = () => {
   return (
     <div className="app">
-
+      {/* // COMPONENTES  */}
       <Header />
       <HeroSection
         titulo = "Ofertas imperdíveis para você"
