@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client' 
+// createRoot - constrói os componentes na tela
 
 // importando rotas
 import { createBrowserRouter } from "react-router"; 

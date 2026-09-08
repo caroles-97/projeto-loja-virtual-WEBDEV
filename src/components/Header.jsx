@@ -7,8 +7,14 @@ import { FaHeart } from "react-icons/fa";
 
 // IMPORTANDO A BIBLIOTECA DO REACT-ROUTER
 import { Link } from "react-router";
+import { useState } from "react";
 
 const Header = () =>{
+
+    const [cart, setCart ] = useState(0)
+    // nome do nosso estado, método que atualiza ele = nome do hook (que vai niciar com 0)
+
+    
     return (
         <header className="header">
             <div className="logo">🛍️ ReactShop</div>
@@ -30,7 +36,8 @@ const Header = () =>{
                 </span>
                 <span className="icon-button cart">
                     🛒
-                    <span className="badge">3</span>
+                    <span className="badge">{cart}</span>
+                    {/* escrevendo JS no HTML  - colocar o nome do estado. Vai aparecer o nº 0 */}
                 </span>
             </div>
         </header>
