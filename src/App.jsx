@@ -7,11 +7,23 @@ import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import Products from './components/Products'
 
+
+import { useState } from "react"
+
+
 const App = () => {
+
+  const [cart, setCart ] = useState(0)
+      // nome do nosso estado, método que atualiza ele = nome do hook (que vai niciar com 0)
+  
   return (
     <div className="app">
       {/* // COMPONENTES  */}
       {/* <Header /> - tirei pq estou reutilizando o cod do layout  */}
+
+
+      <Header produtosCarrinhos={cart}/>
+
       <HeroSection
         titulo = "Ofertas imperdíveis para você"
         subtitulo="Até 30% de desconto em produtos selecionados. Aproveite!"
@@ -23,7 +35,7 @@ const App = () => {
         textoBotao="Ver ofertas" 
         />
       <Categories />
-      <Products />
+      <Products setCart={setCart} />
       <Benefits />
       {/* <Footer />  - tirei pq estou reutilizando o cod do layout  */}
 

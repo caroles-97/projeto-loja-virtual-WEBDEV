@@ -5,7 +5,7 @@ import Header from "../components/Header"
 const Layout = () => {
   return (
     <div className="app">
-        <Header />
+        {/* <Header /> */}
         <Outlet />
         {/* Outlet é um espaço vazio que pode ser preenchido pelos filhos */}
         <Footer/>      

@@ -9,13 +9,15 @@ const HeroSection = ({titulo, subtitulo, textoBotao}) => {
 
     return (
         <section className="banner">
-            <div className="banner-text">
-                <h1>{titulo}</h1>
-                {nome}
-                <p>{subtitulo}</p>
-                <button className="btn-primary">{textoBotao}</button>
-            </div>
-            <img className="banner-image" src={hero} alt="Banner de promoção da loja" />
+            {/* {Math.random()}
+            gera nº aleatório no banner */}
+                <div className="banner-text">
+                    <h1>{titulo}</h1>
+                    {nome}
+                    <p>{subtitulo}</p>
+                    <button className="btn-primary">{textoBotao}</button>
+                </div>
+                <img className="banner-image" src={hero} alt="Banner de promoção da loja" />
         </section>
     )
 }
