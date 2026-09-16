@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# .env - poderia colocar em outros projetos
 node_modules
 dist
 dist-ssr
